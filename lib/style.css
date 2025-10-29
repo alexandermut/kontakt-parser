@@ -54,7 +54,8 @@ textarea:focus {
 }
 
 /* 4. Buttons & Links */
-button, a#link {
+/* --- HIER ERWEITERT --- */
+button, a#link, .button-link {
     display: inline-block; /* Wichtig für padding/margin */
     background-color: #007acc;
     color: #ffffff;
@@ -68,7 +69,8 @@ button, a#link {
     font-weight: bold;
 }
 
-button:hover, a#link:hover {
+/* --- HIER ERWEITERT --- */
+button:hover, a#link:hover, .button-link:hover {
     background-color: #005f9e; /* Dunklerer Blauton beim Hover */
 }
     
