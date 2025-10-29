@@ -1,0 +1,94 @@
+/* 1. Globale Resets & Mobile-First Setup */
+* {
+    box-sizing: border-box; /* WICHTIG für responsive Layouts */
+    font-family: Tahoma, sans-serif;
+    font-size: 100%; /* Besser für Lesbarkeit/Barrierefreiheit */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Dark Mode Body */
+html, body {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    line-height: 1.6;
+    width: 100%;
+    padding: 1em; /* Abstand zum Rand (Mobile) */
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    color: #fff;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.25em;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block; /* Erlaubt margin-bottom */
+    margin-bottom: 0.5em;
+    margin-top: 0.5em; /* Abstand nach oben */
+}
+
+/* 3. Responsive & Dark Textarea */
+textarea {
+    width: 100%; /* Füllt den Container */
+    max-width: 45em; /* Verhindert, dass es auf Desktops zu breit wird */
+    height: 20em;
+    min-height: 15em; /* Mindesthöhe für kleinere Viewports */
+    
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 0.75em;
+    font-family: monospace; /* Besser für Code/Daten-Eingabe */
+    caret-color: white; /* Cursor-Farbe */
+    resize: vertical; /* Erlaube nur vertikales Resizen */
+}
+
+textarea:focus {
+    background-color: #252526;
+    border-color: #007acc; /* Heller Blauton für Fokus */
+    outline: none; /* Deaktiviert den Standard-Browser-Rahmen */
+}
+
+/* 4. Buttons & Links */
+button, a#link {
+    display: inline-block; /* Wichtig für padding/margin */
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6em 1em;
+    margin-top: 0.5em;
+    margin-right: 0.5em; /* Abstand zwischen Buttons */
+    cursor: pointer;
+    text-decoration: none; /* Für den <a>-Tag */
+    font-weight: bold;
+}
+
+button:hover, a#link:hover {
+    background-color: #005f9e; /* Dunklerer Blauton beim Hover */
+}
+    
+/* 5. Debug-Ausgabe-Felder */
+p {
+    font-family: monospace; /* Gut lesbar für Debug-Output */
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 0.25em;
+    word-break: break-all; /* Verhindert horizontales Scrollen bei langen Werten */
+}
+
+/* 6. vCard-Ausgabe */
+p#vcard {
+    background-color: #1e1e1e;
+    border: 1px dashed #555;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 4px;
+    color: #9cdcfe; /* Helle Farbe für die vCard-Ausgabe */
+    line-height: 1.5;
+    white-space: pre-wrap; /* Behält Zeilenumbrüche bei, bricht aber um */
+}

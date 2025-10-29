@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+    
+    <script src="lib/plz_ort_liste.js"></script> 
+    
+    </head>
+
+  <body>
+    <h2>contact 2 vcard</h2>
+    <label for="text">paste contact data here:</label>
+    <br>
+    <br>
+    <textarea autofocus id="impressum_text" name="impressum_text" cols="50" rows="50" oninput="debounceTextInput()"></textarea>
+    <br> 
+    <a download="vcard.vcf" href='#' id="link">download vCard</a>
+    <button onClick="clear_textarea();">clear text</button>
+    <button onClick="window.location.reload();">reload window</button>
+    <br>
+    
+    <p id="vornamen_find_all"></p>
+    <p id="vorname"></p>
+    <p id="nachname"></p>
+    <p id="vorname_check"></p>
+    <p id="nachname_check"></p>
+
+    <p id="vorname_nachname_gf"></p>
+    <p id="vorname_gf"></p>
+    <p id="vorname_gf_check"></p>
+    <p id="nachname_gf"></p>
+
+    <p id="job_title"></p>
+    <p id="firma"></p>
+    <p id="vorname_nachname"></p>
+
+    <p id="strasse"></p>
+    <p id="postleitzahl"></p>
+    <p id="ort"></p>
+
+    <p id="telefon"></p>
+    <p id="telefon_mobil"></p>
+    <p id="fax"></p>
+    <p id="email"></p>
+    <p id="internet"></p>
+
+    <p id="ustid"></p>
+    <p id="stnr"></p>
+    <p id="registergericht"></p>
+    <p id="registernummer"></p>
+    
+    <label for="text">vcard file text:</label>
+    <p id="vcard"></p>
+
+  </body>
+
+</html>
